@@ -11,7 +11,7 @@
     </header>
     <main>
         <form>
-        <h1>UBD</h2>
+        <h1>UBD</h1>
             <section id="Uran238_only">
                 <h2>Uran-238 Only</h2>
                 <label for="uran238_t1">Uran-238, Ursprungswert (ppm):</label>
@@ -22,6 +22,9 @@
                 <br>
                 <br>
                 <input type="button" id="u238_cal" name="uran238_berechnung" value="Berechnen" onclick="Uran238_Cal()">
+                <br>
+                <br>
+                <p>Alter der Probe: <span id="u238_sol"></span> Jahre</p>
             </section>
             <section id="Uran235_Only">
                 <h2>Uran-235 Only</h2>
@@ -33,23 +36,24 @@
                 <br>
                 <br>
                 <input type="button" id="u235_cal" name="uran235_berechnung" value="Berechnen" onclick="Uran235_Cal()">
-        </section>
-        <h2>Blei Only</h2>
-        <label for="blei_t1">Blei, Ursprungswert (ppm):</label>
-        <input type="number" id="blei_t1" name="b_t1" required>
-        <br>
-        <label for="blei_t2">Uran-238, Jetztiger wert (ppm):</label>
-        <input type="number" id="blei_t2" name="b_t2" recquired>
-        <br>
-        <br>
-        <input type="button" id="blei_cal" name="blei_berechnung" value="Berechnen">
-    </section>
-            </form>
-        <section id="ergebnis">
-            <h2>Ergebnis</h2>
-            <p>Alter der Probe: <span id="alter"></span> Jahre</p>
-            <p>Fehlermarge: <span id="fehlermarge"></span> Jahre</p>
-        </section>
+                <br>
+                <br>
+                <p>Alter der Probe: <span id="u235_sol"></span> Jahre</p>
+            </section>
+            <h2>Blei Only</h2>
+                <label for="blei_t1">Blei, Ursprungswert (ppm):</label>
+                <input type="number" id="blei_t1" name="b_t1" required>
+                <br>
+                <label for="blei_t2">Uran-238, Jetztiger wert (ppm):</label>
+                <input type="number" id="blei_t2" name="b_t2" recquired>
+                <br>
+                <br>
+                <input type="button" id="blei_cal" name="blei_berechnung" value="Berechnen" onclick="Blei_Cal()">
+                <br>
+                <br>
+                <p>Alter der Probe: <span id="blei_sol"></span> Jahre</p>
+            </section>
+    </form>
     </main>
     <script src="/JS/script.js"></script>
 </body>
