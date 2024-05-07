@@ -10,10 +10,10 @@
         <h1>Uran-Blei-Datierung</h1>
     </header>
     <main>
+        <form>
         <h1>UBD</h2>
-        <section id="Uran238_only">
-            <h2>Uran-238 Only</h2>
-            <form>
+            <section id="Uran238_only">
+                <h2>Uran-238 Only</h2>
                 <label for="uran238_t1">Uran-238, Ursprungswert (ppm):</label>
                 <input type="number" id="uran238_t1" name="uran238_t1" required>
                 <br>
@@ -21,18 +21,29 @@
                 <input type="number" id="uran238_t2" name="uran238_t2" recquired>
                 <br>
                 <br>
-                <input type="button" id="u238_cal" name="uran238_berechnung" value="Berechnen">
+                <input type="button" id="u238_cal" name="uran238_berechnung" value="Berechnen" onclick="Uran238_Cal()">
             </section>
-                <label for="uran235">Uran-235 (ppm):</label>
-                <input type="number" id="uran235" name="uran235" required>
+            <section id="Uran235_Only">
+                <h2>Uran-235 Only</h2>
+                <label for="uran235_t1">Uran-235, Ursprungswert (ppm):</label>
+                <input type="number" id="uran235_t1" name="uran235_t1" required>
                 <br>
-                <label for="blei206">Blei-206 (ppm):</label>
-                <input type="number" id="blei206" name="blei206" required>
+                <label for="uran235_t2">Uran-235, Jetztiger wert (ppm):</label>
+                <input type="number" id="uran235_t2" name="uran235_t2" recquired>
                 <br>
-                <label for="blei207">Blei-207 (ppm):</label>
-                <input type="number" id="blei207" name="blei207" required>
                 <br>
-                <input type="button" id="calculate" name="Berechnen" value="Berechnen"></button>
+                <input type="button" id="u235_cal" name="uran235_berechnung" value="Berechnen" onclick="Uran235_Cal()">
+        </section>
+        <h2>Blei Only</h2>
+        <label for="blei_t1">Blei, Ursprungswert (ppm):</label>
+        <input type="number" id="blei_t1" name="b_t1" required>
+        <br>
+        <label for="blei_t2">Uran-238, Jetztiger wert (ppm):</label>
+        <input type="number" id="blei_t2" name="b_t2" recquired>
+        <br>
+        <br>
+        <input type="button" id="blei_cal" name="blei_berechnung" value="Berechnen">
+    </section>
             </form>
         <section id="ergebnis">
             <h2>Ergebnis</h2>
