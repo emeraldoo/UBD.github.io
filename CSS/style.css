@@ -1,43 +1,67 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('Bilder/Hintergrund.jpg'); /* Bild für Background einfügen
+    background-color: #2e7d32; /* Hintergrund helleres Grün */
+    color: #fff; /* Schriftfarbe weiss geändert */
 }
+
 
 header {
     text-align: center;
+    background-color: #4caf50; /* Helles Grün für den Header */
+    padding: 20px 0; /*  Abstand oben und unten */
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
+    background-color: #2e7d32; /* Hellerer Grünton für den Hauptteil mit der Berechnung */
+    padding: 20px; /* Abstand um den Hauptteil */
+    border-radius: 10px; /* Abrundung der Ecken vom Hauptteil und den anderen sachen*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Schatten um den Hauptteil */
 }
 
 section {
     margin-bottom: 20px;
+    padding: 20px; /* mehr Abstand und für jeden abschnitt */
+    background-color: #0cc127; /*  Hellerres Grün für die Abschnitte */
+    border-radius: 8px; /* Abrundung der Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* bischen Schatten für die abschnitte */
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #fff; /* Weisse schrift für die namen/lables */
 }
 
 input[type="number"] {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
+    width: calc(100% - 16px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px; /* Abgerundete Ecken für die Felder mit der eingabe */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparentes Weiss für die Felder */
+    color: #fff; /* Weisse Schriftfarbe für die Felder */
+    margin-bottom: 10px;
+    box-sizing: border-box; 
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    padding: 12px 24px;
+    background-color: #7acf2b; /* Helles Grün für die Schaltflächen */
+    color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 5px; /* Abrundung der Ecken für die Schaltflächen */
 }
 
-#ergebnis {
-    text-align: center;
+button:hover {
+    background-color: #8bc34a; /* Dunkles Grün beim Hover-Effekt */
 }
 
-#alter, #fehlermarge {
+#u238_sol,
+#u235_sol,
+#blei_sol {
     font-weight: bold;
+    color: #4eb516; /* Dunkelgrüne Schrift für die Lösungen */
 }
