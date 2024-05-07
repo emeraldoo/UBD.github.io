@@ -12,6 +12,7 @@
     <main>
         <form>
         <h1>UBD</h1>
+        <section id="Single_Elements">
             <section id="Uran238_only">
                 <h2>Uran-238 Only</h2>
                 <label for="uran238_t1">Uran-238, Ursprungswert (ppm):</label>
@@ -40,20 +41,7 @@
                 <br>
                 <p>Alter der Probe: <span id="u235_sol"></span> Jahre</p>
             </section>
-            <section id="Blei_Only">
-            <h2>Blei Only</h2>
-                <label for="blei_t1">Blei, Ursprungswert (ppm):</label>
-                <input type="number" id="blei_t1" name="b_t1" required>
-                <br>
-                <label for="blei_t2">Uran-238, Jetztiger wert (ppm):</label>
-                <input type="number" id="blei_t2" name="b_t2" recquired>
-                <br>
-                <br>
-                <input type="button" id="blei_cal" name="blei_berechnung" value="Berechnen" onclick="Blei_Cal()">
-                <br>
-                <br>
-                <p>Alter der Probe: <span id="blei_sol"></span> Jahre</p>
-            </section>
+        </section>
     </form>
     </main>
     <script src="JS/script.js"></script>
