@@ -10,12 +10,19 @@
         <h1>Uran-Blei-Datierung</h1>
     </header>
     <main>
-        <section id="eingabe">
-            <h2>Probenwerte</h2>
+        <h1>UBD</h2>
+        <section id="Uran238_only">
+            <h2>Uran-238 Only</h2>
             <form>
-                <label for="uran238">Uran-238 (ppm):</label>
-                <input type="number" id="uran238" name="uran238" required>
+                <label for="uran238_t1">Uran-238, Ursprungswert (ppm):</label>
+                <input type="number" id="uran238_t1" name="uran238_t1" required>
                 <br>
+                <label for="uran238_t2">Uran-238, Jetztiger wert (ppm):</label>
+                <input type="number" id="uran238_t2" name="uran238_t2" recquired>
+                <br>
+                <br>
+                <input type="button" id="u238_cal" name="uran238_berechnung" value="Berechnen">
+            </section>
                 <label for="uran235">Uran-235 (ppm):</label>
                 <input type="number" id="uran235" name="uran235" required>
                 <br>
@@ -25,17 +32,14 @@
                 <label for="blei207">Blei-207 (ppm):</label>
                 <input type="number" id="blei207" name="blei207" required>
                 <br>
-                <input type="button" id="calculate" name="Berechnen" onclick="Calculate()">Berechnen</button>
+                <input type="button" id="calculate" name="Berechnen" value="Berechnen"></button>
             </form>
-        </section>
         <section id="ergebnis">
             <h2>Ergebnis</h2>
             <p>Alter der Probe: <span id="alter"></span> Jahre</p>
             <p>Fehlermarge: <span id="fehlermarge"></span> Jahre</p>
         </section>
     </main>
-    <script src="/JS/script.js">
-
-    </script>
+    <script src="/JS/script.js"></script>
 </body>
 </html>
