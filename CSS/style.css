@@ -63,4 +63,7 @@ button:hover {
 #blei_sol {
     font-weight: bold;
     color: #4eb516; /* Dunkelgrüne Schrift für die Lösungen */
+}¨
+span {
+    color: rgb(156, 228, 123);
 }
