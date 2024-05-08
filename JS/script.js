@@ -14,7 +14,7 @@ function Uran238_Cal() {
       );
     }
     // formel: return (-1 / 4'468'000'000) * Math.log(u238_t2 / u238_t1);
-    var solution = (-1 / 4468000000) * Math.log(umber(u238_end) / Number(u238_start));
+    var solution = (-1 / 4468000000) * Math.log(Number(u238_end) / Number(u238_start));
     Formattieren(solution);
     document.getElementById("u238_sol").innerHTML = solution;
   }
