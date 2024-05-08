@@ -34,7 +34,6 @@ function Uran238_Cal() {
         "Der Jetztige wert des Uran-235 ist negativ, Lösung somit ungültig!"
       );
     }
-    // test
     var solution = (-1 / 0.00000000098485) * Math.log(Number(u235_start) / Number(u235_end));
     Formattieren(solution);
     document.getElementById("u238_sol").innerHTML = solution;
