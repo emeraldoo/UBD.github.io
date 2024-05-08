@@ -1,8 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('Bilder/Hintergrund.jpg'); /* Bild für Background einfügen
-    background-color: #2e7d32; /* Hintergrund helleres Grün */
-    color: #fff; /* Schriftfarbe weiss geändert */
+    background-color: #2e7d32; /* Grün für den Hintergrund */
+    color: #fff; /* Weisse Schriftfarbe */
 }
 
 
