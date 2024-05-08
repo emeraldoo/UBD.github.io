@@ -6,9 +6,12 @@ function Uran238_Cal() {
     if  (Number(u238_start) < 0) {
         alert("Der Ursprungswert des Uran-238 ist negativ, Lösung somit ungültig!");
     }
-    else if (Number(u238_end) < 0) {
+    if (Number(u238_end) < 0) {
         alert("Der Jetztige wert des Uran-238 ist negativ, Lösung somit ungültig!");
     }
+    // formel: return (-1 / 4'468'000'000) * Math.log(u238_t2 / u238_t1);
+    var solution = (-1 / 4468000000) * Math.log(u238_t2 / u238_t1);
+    document.getElementById("u238_sol").innerHTML = solution;
 }
 
 function Uran235_Cal() {
@@ -19,7 +22,10 @@ function Uran235_Cal() {
     if  (Number(u235_start) < 0) {
         alert("Der Ursprungswert des Uran-235 ist negativ, Lösung somit ungültig!");
     }
-    else if (Number(u235_end) < 0) {
+    if (Number(u235_end) < 0) {
         alert("Der Jetztige wert des Uran-235 ist negativ, Lösung somit ungültig!");
     }
+    var solution = (-1 / 703800000) * Math.log(u238_t2 / u238_t1);
+    document.getElementById("u238_sol").innerHTML = solution;
+
 }
