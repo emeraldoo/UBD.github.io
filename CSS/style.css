@@ -4,63 +4,63 @@ body {
     color: #fff; /* Weisse Schriftfarbe */
 }
 
-
 header {
     text-align: center;
-    background-color: #4caf50; /* Helles Grün für den Header */
-    padding: 20px 0; /*  Abstand oben und unten */
+    background: linear-gradient(to bottom, #4caf50, #388e3c); /* Farbverlauf für den Header */
+    padding: 20px 0; /* Abstand oben und unten */
+    border-radius: 15px 15px 0 0; /* Etwas eckigere obere Ecken */
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #2e7d32; /* Hellerer Grünton für den Hauptteil mit der Berechnung */
+    background: linear-gradient(to bottom, #2e7d32, #1e5020); /* Farbverlauf für den Hauptteil */
     padding: 20px; /* Abstand um den Hauptteil */
-    border-radius: 10px; /* Abrundung der Ecken vom Hauptteil und den anderen sachen*/
+    border-radius: 10px; /* Etwas eckigere Ecken */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Schatten um den Hauptteil */
 }
 
 section {
     margin-bottom: 20px;
-    padding: 20px; /* mehr Abstand und für jeden abschnitt */
-    background-color: #0cc127; /*  Hellerres Grün für die Abschnitte */
-    border-radius: 8px; /* Abrundung der Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* bischen Schatten für die abschnitte */
+    padding: 20px; /* Mehr Abstand und für jeden Abschnitt */
+    background: linear-gradient(to bottom, #0cc127, #0a721d); /* Farbverlauf für die Abschnitte */
+    border-radius: 8px; /* Etwas eckigere Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bisschen Schatten für die Abschnitte */
 }
 
 label {
     display: block;
     margin-bottom: 10px;
-    color: #fff; /* Weisse schrift für die namen/lables */
+    color: #fff; /* Weisse Schrift für die Labels */
 }
 
 input[type="number"] {
     width: calc(100% - 16px);
     padding: 10px;
     border: none;
-    border-radius: 5px; /* Abgerundete Ecken für die Felder mit der eingabe */
-    background-color: rgba(255, 255, 255, 0.2); /* Transparentes Weiss für die Felder */
-    color: #fff; /* Weisse Schriftfarbe für die Felder */
+    border-radius: 8px; /* Etwas eckigere Ecken für die Eingabefelder */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparentes Weiss für die Eingabefelder */
+    color: #fff; /* Weisse Schriftfarbe für die Eingabefelder */
     margin-bottom: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 button {
     padding: 12px 24px;
-    background-color: #7acf2b; /* Helles Grün für die Schaltflächen */
+    background: linear-gradient(to bottom, #7acf2b, #5fa224); /* Farbverlauf für die Schaltflächen */
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 5px; /* Abrundung der Ecken für die Schaltflächen */
+    border-radius: 8px; /* Etwas eckigere Ecken für die Schaltflächen */
 }
 
 button:hover {
-    background-color: #8bc34a; /* Dunkles Grün beim Hover-Effekt */
+    background: linear-gradient(to bottom, #8bc34a, #6fae39); /* Farbverlauf beim Hover-Effekt */
 }
 
 #u238_sol,
 #u235_sol,
 #blei_sol {
     font-weight: bold;
-    color: rgb(156, 228, 123); /* Dunkelgrüne Schrift für die Lösungen */
+    color: #4eb516; /* Dunkelgrüne Schrift für die Lösungen */
 }
