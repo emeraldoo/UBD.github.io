@@ -13,8 +13,8 @@ function Uran238_Cal() {
         "Der Jetztige wert des Uran-238 ist negativ, Lösung somit ungültig!"
       );
     }
-    // formel: return (-1 / 4'468'000'000) * Math.log(u238_t2 / u238_t1);
-    var solution = (-1 / 4468000000) * Math.log(Number(u238_end) / Number(u238_start));
+    // formel: return (-1 / 0.000000000155125) * Math.log(u238_t2 / u238_t1);
+    var solution = (-1 / 0.000000000155125) * Math.log(Number(u238_end) / Number(u238_start));
     Formattieren(solution);
     document.getElementById("u238_sol").innerHTML = solution;
   }
@@ -35,7 +35,7 @@ function Uran238_Cal() {
       );
     }
     // test
-    var solution = (-1 / 703800000) * Math.log(Number(u235_start) / Number(u235_end));
+    var solution = (-1 / 0.00000000098485) * Math.log(Number(u235_start) / Number(u235_end));
     Formattieren(solution);
     document.getElementById("u238_sol").innerHTML = solution;
   }
