@@ -34,22 +34,22 @@ function Uran238_Cal() {
         "Der Jetztige wert des Uran-235 ist negativ, Lösung somit ungültig!"
       );
     }
-    var solution = (-1 / 703800000) * Math.log(Number(u238_start) / Number(u238_end));
+    var solution = (-1 / 703800000) * Math.log(Number(u235_start) / Number(u235_end));
     Formattieren(solution);
     document.getElementById("u238_sol").innerHTML = solution;
   }
 
   function Formattieren(solution) {
     if (solution >= 1000000000000) {
-        solution = solution / 1000000000000 + "Bil";
+        solution = (solution / 1000000000000).toFixed(6) + "Bil";
         return solution;
     }
     else if (solution >= 1000000000) {
-        solution = solution / 1000000000 + "Mrd";
+        solution = (solution / 1000000000).toFixed(3) + "Mrd";
         return solution;
     } 
     else if (solution >= 1000000) {
-        solution = solution / 1000000 + "Mil";
+        solution = (solution / 1000000).toFixed(1) + "Mil";
         return solution;
     }
   }
