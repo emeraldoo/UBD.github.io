@@ -6,7 +6,7 @@ function Uran238_Cal() {
     if  (Number(u238_start) < 0) {
         alert("Der Ursprungswert des Uran-238 ist negativ, Lösung somit ungültig!")
     }
-    if (Number(u238_end) < 0) {
+    else if (Number(u238_end) < 0) {
         alert("Der Jetztige wert des Uran-238 ist negativ, Lösung somit ungültig!")
     }
 }
@@ -18,7 +18,7 @@ function Uran235_Cal() {
     if  (Number(u235_start) < 0) {
         alert("Der Ursprungswert des Uran-235 ist negativ, Lösung somit ungültig!")
     }
-    if (Number(u235_end) < 0) {
+    else if (Number(u235_end) < 0) {
         alert("Der Jetztige wert des Uran-235 ist negativ, Lösung somit ungültig!")
     }
 }
