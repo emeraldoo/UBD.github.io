@@ -9,10 +9,8 @@ function Uran238_Cal() {
     else if (Number(u238_end) < 0) {
         alert("Der Jetztige wert des Uran-238 ist negativ, Lösung somit ungültig!");
     }
-    else {
-
-    }
 }
+
 function Uran235_Cal() {
     // E - Erfassen
     var u235_start = document.getElementById("u235_t1").value;
