@@ -49,6 +49,6 @@ function Formattieren(solution) {
       solution = (solution / 1000000).toFixed(1) + " Mio.";
       return solution;
   } else {
-      return solution + " Jahre"; // Falls die Zahl kleiner als 1 Mio. ist
+      return solution; // Falls die Zahl kleiner als 1 Mio. ist
   }
 }
