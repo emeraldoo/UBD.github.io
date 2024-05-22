@@ -39,7 +39,7 @@ function Formattieren(solution) {
   solution = Math.ceil(solution / 100000) * 100000;
   if (solution >= 1000000000000) {
       solution = (solution / 1000000000000).toFixed(6) + " Bil";
-      return solution;
+      return solution;  
   }
   else if (solution >= 1000000000) {
       solution = (solution / 1000000000).toFixed(3) + " Mrd";
