@@ -41,10 +41,12 @@ function Uran235_Cal() {
     return;
   }
   var solution =
-    (1 / 0.00000000098485) * Math.log(Number(u235_start) / Number(u235_end));
+    (1 / 0.00000000098485) *
+    Math.log(Number(u235_start) / Number(u235_end));
   solution = Formattieren(solution);
   document.getElementById("u235_sol").innerHTML = solution;
 }
+
 function Uran235Decay_Cal() {
   // E - Erfassen
   var u235_decay = document.getElementById("ud235_t2").value;
@@ -53,9 +55,11 @@ function Uran235Decay_Cal() {
     alert("Der Angegebene Wert ist Negativ; Lösung ungültig!");
     return;
   }
-  var solution = (1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
+  var solution =
+    (1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
   solution = Formattieren(solution);
-  docu
+  docu;
+}
 function Uran238Decay_Cal() {
   // E - Erfassen
   var u238_decay = document.getElementById("ud238_t2").value;
@@ -64,7 +68,8 @@ function Uran238Decay_Cal() {
     alert("Der Angegebene Wert ist Negativ; Lösung ungültig!");
     return;
   }
-  var solution = (1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
+  var solution =
+    (1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
   solution = Formattieren(solution);
   document.getElementById("ud238_sol").innerHTML = solution;
 }
@@ -83,5 +88,4 @@ function Formattieren(solution) {
   } else {
     return solution; // Falls die Zahl kleiner als 1 Mio. ist
   }
-}
 }
