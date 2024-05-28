@@ -1,3 +1,16 @@
+function Uran238Decay_Cal() {
+  // E - Erfassen
+  var u238_decay = document.getElementById("ud238_t2").value;
+  //V - Verarbeiten
+  if (Number(u238_decay) < 0) {
+    alert("Der Angegebene Wert ist Negativ; Lösung ungültig!");
+    return;
+  }
+  var solution =
+    (1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
+  solution = Formattieren(solution);
+  document.getElementById("ud238_sol").innerHTML = solution;
+}
 function Uran238_Cal() {
   // E - Erfassen
   var u238_start = document.getElementById("uran238_t1").value;
@@ -59,19 +72,7 @@ function Uran235Decay_Cal() {
     (1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
   solution = Formattieren(solution);
 }
-function Uran238Decay_Cal() {
-  // E - Erfassen
-  var u238_decay = document.getElementById("ud238_t2").value;
-  //V - Verarbeiten
-  if (Number(u238_decay) < 0) {
-    alert("Der Angegebene Wert ist Negativ; Lösung ungültig!");
-    return;
-  }
-  var solution =
-    (1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
-  solution = Formattieren(solution);
-  document.getElementById("ud238_sol").innerHTML = solution;
-}
+
 
 function Formattieren(solution) {
   solution = Math.ceil(solution / 100000) * 100000;
