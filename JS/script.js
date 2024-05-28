@@ -6,13 +6,14 @@ function UranDecay238_Cal() {
     alert("Der Angegebene Wert ist Negativ; Lösung ungültig!");
     return;
   }
-  var solution =
-    (1 / 0.000000000155125) *
-    Math.log(Number(u238_decay));
-    solution = Formattieren(solution);
+    var solution =
+        (-4468000000 *
+            Math.log(0.01 * Number(u238_decay)) /
+            Math.log(2));
     if (solution < 0) {
         solution = solution * -1;
     } 
+    solution = Formattieren(solution);
   document.getElementById("ud238_sol").innerHTML = solution;
 }
 function Uran238_Cal() {
@@ -33,14 +34,14 @@ function Uran238_Cal() {
     return;
   }
   // Formel: return (-1 / 0.000000000155125) * Math.log(u238_t2 / u238_t1);
-  var solution =
-    (1 / 0.000000000155125) *
-    Math.log(Number(u238_start) / Number(u238_end));
+    var solution =
+        (-4468000000 *
+            Math.log(Number(u238_end) /Number(u238_start)) /
+            Math.log(2));
     solution = Formattieren(solution);
     
   document.getElementById("u238_sol").innerHTML = solution;
 }
-
 function Uran235_Cal() {
   // E - Erfassen
   var u235_start = document.getElementById("u235_t1").value;
@@ -58,13 +59,13 @@ function Uran235_Cal() {
     );
     return;
   }
-  var solution =
-    (1 / 0.00000000098485) *
-    Math.log(Number(u235_start) / Number(u235_end));
+    var solution =
+        (-703800000 *
+            Math.log((Number(u235_end) / Number(u235_start) /
+                Math.log(2))));
   solution = Formattieren(solution);
   document.getElementById("u235_sol").innerHTML = solution;
 }
-
 function UranDecay235_Cal() {
   // E - Erfassen
   var u235_decay = document.getElementById("ud235_t2").value;
@@ -73,13 +74,14 @@ function UranDecay235_Cal() {
     alert("Der Angegebene Wert ist Negativ; Lösung ungültig!");
     return;
   }
- var solution =
-    (1 / 0.00000000098485) *
-    Math.log(Number(u235_decay));
-    solution = Formattieren(solution);
-        if (solution < 0) {
+    var solution =
+        (-703800000  *
+            Math.log(0.01 * Number(u235_decay) /
+                Math.log(2)))
+    if (solution < 0) {
         solution = solution * -1;
     } 
+    solution = Formattieren(solution);
    document.getElementById("ud235_sol").innerHTML = solution;
 }
 
