@@ -1,13 +1,13 @@
 function UranDecay238_Cal() {
   // E - Erfassen
-  var u238_decay = document.getElementById("ud238_t2").value;
+  var u238_decay = document.getElementById("udecay238_t2").value;
   //V - Verarbeiten
   if (Number(u238_decay) < 0) {
     alert("Der Angegebene Wert ist Negativ; Lösung ungültig!");
     return;
   }
   var solution =
-    (1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
+    (-1 / 0.000000000155125) * Math.log(0.1 * Number(u238_decay));
   solution = Formattieren(solution);
   document.getElementById("ud238_sol").innerHTML = solution;
 }
@@ -69,8 +69,9 @@ function UranDecay235_Cal() {
     return;
   }
   var solution =
-    (1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
-  solution = Formattieren(solution);
+    (-1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
+    solution = Formattieren(solution);
+   document.getElementById("ud235_sol").innerHTML = solution;
 }
 
 
