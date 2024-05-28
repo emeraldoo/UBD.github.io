@@ -58,7 +58,6 @@ function Uran235Decay_Cal() {
   var solution =
     (1 / 0.00000000098485) * Math.log(0.1 * Number(u235_decay));
   solution = Formattieren(solution);
-  docu;
 }
 function Uran238Decay_Cal() {
   // E - Erfassen
