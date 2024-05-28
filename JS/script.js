@@ -60,7 +60,7 @@ function Uran235_Cal() {
   document.getElementById("u235_sol").innerHTML = solution;
 }
 
-function Uran235Decay_Cal() {
+function UranDecay235_Cal() {
   // E - Erfassen
   var u235_decay = document.getElementById("ud235_t2").value;
   //V - Verarbeiten
