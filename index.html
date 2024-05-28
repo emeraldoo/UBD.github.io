@@ -28,8 +28,7 @@
               id="u238_cal"
               name="uran238_berechnung"
               value="Berechnen"
-              onclick="Uran238_Cal()"
-            />
+              onclick="Uran238_Cal()" />
             <br />
             <br />
             <p>Alter der Probe: <span id="u238_sol"></span> Jahre</p>
@@ -48,8 +47,7 @@
               id="u235_cal"
               name="uran235_berechnung"
               value="Berechnen"
-              onclick="Uran235_Cal()"
-            />
+              onclick="Uran235_Cal()" />
             <br />
             <br />
             <p>Alter der Probe: <span id="u235_sol"></span> Jahre</p>
@@ -58,8 +56,14 @@
         <section id="Decay_Elements">
           <section id="Uran238Decay_only">
             <h2>Uran-238 Only</h2>
-            <label for="udecay238_t2">Uran-238 Decay (ppm):</label>
-            <input type="number" id="udecay238_t2" name="urandecay238_t2" required />
+            <label for="udecay238_t2"
+              >Prozentsatz an Zerfallenen Uran-238:</label
+            >
+            <input
+              type="number"
+              id="udecay238_t2"
+              name="urandecay238_t2"
+              required />
             <br />
             <br />
             <input
@@ -67,16 +71,19 @@
               id="ud238_cal"
               name="urandecay238_berechnung"
               value="Berechnen"
-              onclick="UranDecay238_Cal()"
-            />
+              onclick="UranDecay238_Cal()" />
             <br />
             <br />
             <p>Alter der Probe: <span id="ud238_sol"></span> Jahre</p>
           </section>
           <section id="UranDecay235_Only">
             <h2>Uran-235 Only</h2>
-            <label for="ud235_t1">Prozentsatz an Uran-235 (ppm):</label>
-            <input type="number" id="ud235_t2" name="urandecay235_t1" required />
+            <label for="ud235_t1">Prozentsatz an Zerfallenen Uran-235:</label>
+            <input
+              type="number"
+              id="ud235_t2"
+              name="urandecay235_t1"
+              required />
             <br />
             <br />
             <input
@@ -84,8 +91,7 @@
               id="ud235_cal"
               name="urandecay235_berechnung"
               value="Berechnen"
-              onclick="UranDecay235_Cal()"
-            />
+              onclick="UranDecay235_Cal()" />
             <br />
             <br />
             <p>Alter der Probe: <span id="ud235_sol"></span> Jahre</p>
