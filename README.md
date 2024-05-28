@@ -16,13 +16,15 @@ Besuche die Website, um den Rechner zu nutzen: [UranBlei-Datierungsrechner](http
 
 ## Mitwirkende
 
-- **Linus Rothe** - 
-- **Nico Kotoulas** - 
-- **Leon Zingg** - 
+- **Linus Rothe** 
+- **Nico Kotoulas** 
+- **Leon Zingg** 
 
 ## Kontakt
 
 - Email: linus.rothe@stud.kftg.ch
+- Email: nico.kotoulas@stud.kftg.ch
+- Email: leon.zingg@stud.kftg.ch
 
 
 Vielen Dank für Ihr Interesse an unserem UranBlei-Datierungsrechner-Projekt!
