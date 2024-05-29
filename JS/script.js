@@ -77,7 +77,7 @@ function UranDecay235_Cal() {
     alert("Der Angegebene Wert darf nicht grösser als 100 sein!");
   } else {
     var solution = (-703800000 * Math.log(0.01 * Number(u235_decay)) / Math.log(2));
-    solution = Formattieren(solution);
+    solution = Formattieren(solution); 
     document.getElementById("ud235_sol").innerHTML = solution;
   }
 }
