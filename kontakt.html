@@ -19,8 +19,21 @@
   </header>
   <main>
     <section class="Kontakt-text">
-      <h2>Kontakt</h2>
-      <p>Kontaktdaten...</p>
+      <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left"> 
+            <div class="contact-left-title">
+                <h2>Treten Sie mit uns in Kontakt</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="c749797a-7267-4fd6-a6ef-517ed6278843">
+            <input type="text" name="name" placeholder="Dein Vor- & Nachname" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Deine E-Mail Adresse" class="contact-inputs" required>
+            <textarea name="message" placeholder="Deine Nachricht" class="contact-inputs" required></textarea>
+            <button type="submit">Absenden <img src="assets/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right"></div>
+        <img src="assets/animal1.png">
+    </div>
     </section>
   </main>
   <footer>
