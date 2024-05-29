@@ -11,9 +11,6 @@ function UranDecay238_Cal() {
       (-4468000000 *
         Math.log(0.01 * Number(u238_decay)) /
         Math.log(2));
-    if (solution < 0) {
-      solution = solution * -1;
-    }
     solution = Formattieren(solution);
     document.getElementById("ud238_sol").innerHTML = solution;
   }
@@ -87,9 +84,6 @@ function UranDecay235_Cal() {
       (-703800000 *
         Math.log(0.01 * Number(u235_decay)) /
         Math.log(2));
-    if (solution < 0) {
-      solution = solution * -1;
-    }
     solution = Formattieren(solution);
     document.getElementById("ud235_sol").innerHTML = solution;
   }
