@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Impressum</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Datierungsrechner</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="impressum-text">
+      <h2>Impressum</h2>
+      <p>Hier finden Sie die rechtlichen Hinweise...</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Uran-Blei-Datierung</p>
+  </footer>
+</body>
+</html>
 
