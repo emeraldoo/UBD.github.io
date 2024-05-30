@@ -14,6 +14,11 @@ window.onclick = function(event) {
   }
 }
 
+function toggleQRCode() {
+  var qrOverlay = document.getElementById("qrOverlay");
+  qrOverlay.classList.toggle("show");
+}
+
 function UranDecay238_Cal() {
   var u238_decay = document.getElementById("udecay238_t2").value;
   document.getElementById("ud238_sol").innerHTML = "-";
