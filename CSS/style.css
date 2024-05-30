@@ -11,6 +11,7 @@ header {
   color: #ffffff;
   padding: 20px;
   text-align: center;
+  position: relative;
 }
 
 header h1 {
@@ -45,9 +46,16 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-nav ul li .qr-code {
-  width: 50px;
-  height: 50px;
+.qr-code-container {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.qr-code {
+  width: 100px;
+  height: 100px;
   cursor: pointer;
 }
 
@@ -181,5 +189,11 @@ footer {
 
   form {
     padding: 10px;
+  }
+
+  .qr-code-container {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
   }
 }
