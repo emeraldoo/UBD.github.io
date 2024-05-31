@@ -88,17 +88,27 @@ main {
 
 /* Contact Form Styles */
 .contact-container {
-  height: 100vh;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .contact-left {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 20px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-left-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .contact-left-title h2 {
@@ -114,6 +124,7 @@ main {
   background-color: #3b6e30;
   border-radius: 10px;
   margin-bottom: 20px;
+  align-self: flex-start; /* Ensures the line stays under the heading */
 }
 
 .contact-inputs,
@@ -177,17 +188,51 @@ button:hover {
   background-color: #2a4f21;
 }
 
+.contact-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
 .contact-right img {
-  width: 650px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .contact-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-left-title {
+    align-items: center;
+  }
+
+  .contact-left-title hr {
+    align-self: center;
+  }
 }
 
 @media (max-width: 800px) {
   .contact-inputs {
-      width: 80vw;
+    width: 100%;
   }
 
   .contact-right {
-      display: none;
+    display: none;
   }
 }
 
@@ -217,20 +262,35 @@ p span {
 /* Responsive */
 @media only screen and (max-width: 600px) {
   header {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   nav ul li {
-      display: block;
-      margin: 5px 0;
+    display: block;
+    margin: 5px 0;
   }
 
   input[type="button"],
   button {
-      width: 100%;
+    width: 100%;
   }
 
   form {
-      padding: 10px;
+    padding: 10px;
+  }
+
+  .contact-right {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-right {
+    display: none;
   }
 }
