@@ -1,98 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uran-Blei-Datierung</title>
-  <link rel="stylesheet" href="CSS/style.css" />
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="CSS/kontakt.css" />
 </head>
 <body>
   <header>
-    <h1>Uran-Blei-Datierung</h1>
+    <h1>Kontakt</h1>
     <nav>
       <ul>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown()">Datierungsrechner</a>
-          <div class="dropdown-content" id="dropdownMenu">
-            <a href="#Uran238_only">Uran-238 zu 2 Zeitpunkten</a>
-            <a href="#Uran235_Only">Uran-235 zu 2 Zeitpunkten</a>
-            <a href="#Uran238Decay_only">Uran-238 Zerfall</a>
-            <a href="#UranDecay235_Only">Uran-235 Zerfall</a>
-          </div>
-        </li>
+        <li><a href="index.html">Datierungsrechner</a></li>
         <li><a href="impressum.html">Impressum</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
-    <div class="qr-code-container">
-      <img src="assets/qr-code.png" alt="QR Code" class="qr-code" id="qrCode" onclick="toggleQRCode()" />
-    </div>
   </header>
   <main>
-    <form>
-      <h1>UBD</h1>
-      <section id="Single_Elements">
-        <section id="Uran238_only">
-          <h2>Uran-238 zu 2 Zeitpunkten</h2>
-          <label for="uran238_t1">Uran-238, Ursprungswert (ppm):</label>
-          <input type="number" id="uran238_t1" name="uran238_t1" required />
-          <br />
-          <label for="uran238_t2">Uran-238, Jetztiger Wert (ppm):</label>
-          <input type="number" id="uran238_t2" name="uran238_t2" required />
-          <br />
-          <br />
-          <input type="button" id="u238_cal" name="uran238_berechnung" value="Berechnen" onclick="Uran238_Cal()" />
-          <br />
-          <br />
-          <p>Alter der Probe: <span id="u238_sol">-</span> Jahre</p>
-        </section>
-        <section id="Uran235_Only">
-          <h2>Uran-235 zu 2 Zeitpunkten</h2>
-          <label for="u235_t1">Uran-235, Ursprungswert (ppm):</label>
-          <input type="number" id="u235_t1" name="uran235_t1" required />
-          <br />
-          <label for="u235_t2">Uran-235, Jetztiger Wert (ppm):</label>
-          <input type="number" id="u235_t2" name="uran235_t2" required />
-          <br />
-          <br />
-          <input type="button" id="u235_cal" name="uran235_berechnung" value="Berechnen" onclick="Uran235_Cal()" />
-          <br />
-          <br />
-          <p>Alter der Probe: <span id="u235_sol">-</span> Jahre</p>
-        </section>
-      </section>
-      <section id="Decay_Elements">
-        <section id="Uran238Decay_only">
-          <h2>Uran-238 Zerfall</h2>
-          <label for="udecay238_t2">Prozentsatz an übrigen Uran-238 (ppm):</label>
-          <input type="number" id="udecay238_t2" name="urandecay238_t2" required />
-          <br />
-          <br />
-          <input type="button" id="ud238_cal" name="urandecay238_berechnung" value="Berechnen" onclick="UranDecay238_Cal()" />
-          <br />
-          <br />
-          <p>Alter der Probe: <span id="ud238_sol">-</span> Jahre</p>
-        </section>
-        <section id="UranDecay235_Only">
-          <h2>Uran-235 Zerfall</h2>
-          <label for="ud235_t1">Prozentsatz an übrigen Uran-235 (ppm):</label>
-          <input type="number" id="ud235_t2" name="urandecay235_t1" required />
-          <br />
-          <br />
-          <input type="button" id="ud235_cal" name="urandecay235_berechnung" value="Berechnen" onclick="UranDecay235_Cal()" />
-          <br />
-          <br />
-          <p>Alter der Probe: <span id="ud235_sol">-</span> Jahre</p>
-        </section>
-      </section>
-    </form>
+    <section class="Kontakt-text">
+      <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left"> 
+            <div class="contact-left-title">
+                <h2>Treten Sie mit uns in Kontakt</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="9080bbe6-a97a-4647-879c-a2427644ce0c">
+            <input type="name" name="name" placeholder="Dein Vor- & Nachname" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Deine E-Mail Adresse" class="contact-inputs" required>
+            <textarea name="message" placeholder="Deine Nachricht" class="contact-inputs" required></textarea>
+            <button type="submit">Absenden <img src="assets/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+        <img src="assets/animal1.png">
+  </div>
+    </div>
+    </section>
   </main>
   <footer>
     <p>&copy; 2024 Uran-Blei-Datierung</p>
   </footer>
-  <div id="qrOverlay" class="qr-overlay" onclick="toggleQRCode()">
-    <img src="assets/qr-code.png" alt="QR Code" class="qr-overlay-image" />
-  </div>
   <script src="JS/script.js"></script>
 </body>
 </html>
