@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Impressum</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="icon" href="assets/tab-bild.png" />
-  </head>
-  <body>
-    <header>
-      <h1>Impressum</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Datierungsrechner</a></li>
-          <li><a href="formel.html">TEST</a></li>
-          <li><a href="impressum.html">Impressum</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
-      <div class="qr-code-container">
-        <img
-          src="assets/qr-code.png"
-          alt="QR Code"
-          class="qr-code"
-          id="qrCode"
-          onclick="toggleQRCode()"
-        />
-      </div>
-    </header>
-    <main>
-      <section class="impressum-text">
-        <h2>Impressum</h2>
-        <h3>Angaben gemäss § 5 TMG:</h3>
-        <h4>Verantwortliche Personen:</h4>
-        <p>
-          Nico Kotoulas<br />
-          Strasse: Eichenstrasse 7<br />
-          PLZ/Ort: 8280 Kreuzlingen<br />
-          Telefon: +41 77 226 83 89<br />
-          E-Mail: uranbleidatierung@gmail.com<br />
-        </p>
-        <p>
-          Linus Rothe<br />
-          Strasse: Sangenstrasse 1<br />
-          PLZ/Ort: 8573 Siegershausen<br />
-          Telefon: +41 78 811 82 63<br />
-          E-Mail: uranbleidatierung@gmail.com<br />
-        </p>
-        <p>
-          Leon Zingg <br />
-          Strasse: Weststrasse 17 <br />
-          PLZ/Ort: 8553 Mettendorf <br />
-          Telefon: +41 77 497 98 99 <br />
-          E-Mail: uranbleidatierung@gmail.com<br />
-        </p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2024 Uran-Blei-Datierung</p>
-    </footer>
-    <div id="qrOverlay" class="qr-overlay" onclick="toggleQRCode()">
-      <img src="assets/qr-code.png" alt="QR Code" class="qr-overlay-image" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="icon" href="assets/tab-bild.png" />
+</head>
+<body>
+  <header>
+    <h1>Impressum</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Datierungsrechner</a></li>
+        <li><a href="formel.html">Formel</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="qr-code-container">
+      <img src="assets/qr-code.png" alt="QR Code" class="qr-code" id="qrCode" onclick="toggleQRCode()" />
     </div>
-    <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
-    <script src="JS/script.js"></script>
-  </body>
+  </header>
+  <main>
+    <section class="impressum-text">
+      <h2>Impressum</h2>
+      <h3>Angaben gemäss § 5 TMG:</h3>
+      <h4>Verantwortliche Personen:</h4>
+      <p>
+        Nico Kotoulas<br />
+        Strasse: Eichenstrasse 7<br />
+        PLZ/Ort: 8280 Kreuzlingen<br />
+        Telefon: +41 77 226 83 89<br />
+        E-Mail: uranbleidatierung@gmail.com<br />
+      </p>
+      <p>
+        Linus Rothe<br />
+        Strasse: Sangenstrasse 1<br />
+        PLZ/Ort: 8573 Siegershausen<br />
+        Telefon: +41 78 811 82 63<br />
+        E-Mail: uranbleidatierung@gmail.com<br />
+      </p>
+      <p>
+        Leon Zingg <br />
+        Strasse: Weststrasse 17 <br />
+        PLZ/Ort: 8553 Mettendorf <br />
+        Telefon: +41 77 497 98 99 <br />
+        E-Mail: uranbleidatierung@gmail.com<br />
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Uran-Blei-Datierung</p>
+  </footer>
+  <div id="qrOverlay" class="qr-overlay" onclick="toggleQRCode()">
+    <img src="assets/qr-code.png" alt="QR Code" class="qr-overlay-image" />
+  </div>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
+  <script src="JS/script.js"></script>
+</body>
 </html>
