@@ -104,13 +104,20 @@ main {
   margin-bottom: 5px;
 }
 
-.contact-left-title hr {
-  border: none;
-  width: 120px;
+.contact-left-title .highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-left-title .highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
   height: 5px;
   background-color: #3b6e30;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .contact-inputs,
@@ -215,11 +222,33 @@ button:hover {
 
 @media (max-width: 800px) {
   .contact-inputs {
-      width: 80vw;
+    width: 80vw;
   }
 
   .contact-right {
-      display: none;
+    display: none;
+  }
+
+  .qr-code-container {
+    position: static;
+    margin: 10px 0;
+    text-align: center;
+    transform: none;
+  }
+
+  .qr-code {
+    width: 60px;
+    height: 60px;
+  }
+
+  .qr-overlay img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    height: auto;
   }
 
   .qr-code-container {
@@ -236,6 +265,11 @@ button:hover {
   .qr-overlay img {
     max-width: 80%;
     max-height: 80%;
+  }
+
+  input[type="button"],
+  button {
+    width: 100%;
   }
 }
 
@@ -262,38 +296,61 @@ p span {
 
 @media only screen and (max-width: 600px) {
   header {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   nav ul li {
-      display: block;
-      margin: 5px 0;
+    display: block;
+    margin: 5px 0;
   }
 
   input[type="button"],
   button {
-      width: 100%;
-  } 
+    width: 100%;
+  }
 
   form {
-      padding: 10px;
+    padding: 10px;
   }
 
   .contact-right {
-      display: none;
+    display: none;
+  }
+
+  .qr-code-container {
+    position: static;
+    margin: 10px 0;
+    text-align: center;
+    transform: none;
+  }
+
+  .qr-code {
+    width: 60px;
+    height: 60px;
+  }
+
+  .qr-overlay img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    height: auto;
   }
 }
 
 @media (orientation: landscape) and (max-width: 800px) {
   .contact-container {
-      flex-direction: column;
-      height: auto;
+    flex-direction: column;
+    height: auto;
   }
 
   .contact-right {
-      display: none;
+    display: none;
   }
 }
+
 #scrollToTopBtn {
   display: none;
   position: fixed;
@@ -301,15 +358,26 @@ p span {
   right: 20px;
   z-index: 99;
   font-size: 18px;
-  background-color: #000;
+  background: linear-gradient(270deg, #3b6e30, #2a4f21);
   color: #fff;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
 }
 
 #scrollToTopBtn:hover {
-  background-color: #555;
+  background-color: #2a4f21;
+}
+
+@media only screen and (max-width: 600px) {
+  #scrollToTopBtn {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 10px;
+    font-size: 16px;
+  }
 }
