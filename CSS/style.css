@@ -238,10 +238,10 @@ footer {
   }
 
   #scrollToTopBtn {
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 20px;
+    right: 20px;
     padding: 8px 10px;
     font-size: 16px;
+    width: auto;
   }
 }
