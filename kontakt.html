@@ -1,88 +1,53 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="CSS/kontakt.css" />
-    <link rel="icon" href="assets/tab-bild.png" />
-  </head>
-  <body>
-    <header>
-      <h1>Kontakt</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Datierungsrechner</a></li>
-          <li><a href="formel.html">TEST</a></li>
-          <li><a href="impressum.html">Impressum</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
-      <div class="qr-code-container">
-        <img
-          src="assets/qr-code.png"
-          alt="QR Code"
-          class="qr-code"
-          id="qrCode"
-          onclick="toggleQRCode()"
-        />
-      </div>
-    </header>
-    <main>
-      <section class="Kontakt-text">
-        <div class="contact-container">
-          <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
-            class="contact-left"
-          >
-            <div class="contact-left-title">
-              <h2>Treten Sie mit uns in Kontakt</h2>
-              <hr />
-            </div>
-            <input
-              type="hidden"
-              name="access_key"
-              value="9080bbe6-a97a-4647-879c-a2427644ce0c"
-            />
-            <input
-              type="name"
-              name="name"
-              placeholder="Dein Vor- & Nachname"
-              class="contact-inputs"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Deine E-Mail Adresse"
-              class="contact-inputs"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Deine Nachricht"
-              class="contact-inputs"
-              required
-            ></textarea>
-            <button type="submit">
-              Absenden <img src="assets/arrow_icon.png" alt="" />
-            </button>
-          </form>
-          <div class="contact-right">
-            <img src="assets/animal1.png" />
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2024 Uran-Blei-Datierung</p>
-    </footer>
-    <div id="qrOverlay" class="qr-overlay" onclick="toggleQRCode()">
-      <img src="assets/qr-code.png" alt="QR Code" class="qr-overlay-image" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="CSS/kontakt.css" />
+  <link rel="icon" href="assets/tab-bild.png" />
+</head>
+<body>
+  <header>
+    <h1>Kontakt</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Datierungsrechner</a></li>
+        <li><a href="formel.html">Formel</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="qr-code-container">
+      <img src="assets/qr-code.png" alt="QR Code" class="qr-code" id="qrCode" onclick="toggleQRCode()" />
     </div>
-    <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
-
-    <script src="JS/script.js"></script>
-  </body>
+  </header>
+  <main>
+    <section class="Kontakt-text">
+      <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left"> 
+          <div class="contact-left-title">
+            <h2>Treten Sie mit uns in <span class="highlight">Kontakt</span></h2>
+          </div>
+          <input type="hidden" name="access_key" value="9080bbe6-a97a-4647-879c-a2427644ce0c">
+          <input type="name" name="name" placeholder="Dein Vor- & Nachname" class="contact-inputs" required>
+          <input type="email" name="email" placeholder="Deine E-Mail Adresse" class="contact-inputs" required>
+          <textarea name="message" placeholder="Deine Nachricht" class="contact-inputs" required></textarea>
+          <button type="submit">Absenden <img src="assets/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+          <img src="assets/animal1.png">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Uran-Blei-Datierung</p>
+  </footer>
+  <div id="qrOverlay" class="qr-overlay" onclick="toggleQRCode()">
+    <img src="assets/qr-code.png" alt="QR Code" class="qr-overlay-image" />
+  </div>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
+  <script src="JS/script.js"></script>
+</body>
 </html>
