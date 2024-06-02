@@ -245,3 +245,34 @@ footer {
     width: auto;
   }
 }
+
+.formel-text h3 {
+  color: #2a4f21;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.formel-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.formel-text ul {
+  list-style-type: disc;
+  margin: 10px 0 20px 20px;
+  padding: 0;
+}
+
+.formel-text .formula {
+  background-color: #f0f8f0;
+  border: 1px solid #3b6e30;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  color: #3b6e30;
+}
+
