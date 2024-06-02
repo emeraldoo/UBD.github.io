@@ -24,8 +24,54 @@
   </header>
   <main>
     <section class="formel-text">
-      <h2>Formelberechnungen</h2>
+      <h1>Formelberechnungen</h1>
       <!-- Formelberechnungen Inhalt -->
+      <section>
+        <h3>Geschichte</h3>
+        <p>Das Konzept der Uran-Blei-Datierung wurde 1905 erstmals von <strong>Ernest Rutherford</strong> vorgeschlagen. <br> Nachdem 1907 festgestellt wurde, dass Blei das Endprodukt des Uranzerfalls ist, begann 1911 die Ausarbeitung eines Konzepts. <br> Da jedoch zu diesem Zeitpunkt die Existenz von Isotopen unbekannt war, wurde das Konzept fallengelassen. <br> Erst nachdem 1927 <strong>Francis W. Aston</strong> die Existenz von Isotopen anhand von Blei bewies, ging die Entwicklung weiter.</p>
+        <p>1930 bestimmte <strong>Otto Hahn</strong> das Alter der Erde mithilfe von Proben auf 1,5 bis 3 Milliarden Jahre – eine Schätzung, die 1937 von <strong>Alfred Nier</strong> unter Verwendung von Blei-Isotopen widerlegt wurde. <br> Die Entwicklung der Atombombe im Rahmen des Manhattan-Projekts führte zu besseren Techniken zur Bestimmung der Materie. <br> Im Jahre 1953 veröffentlichte <strong>Clair C. Patterson</strong> schliesslich das heute akzeptierte Alter der Erde: 4,55 Milliarden Jahre.</p>
+      </section>
+      <section>
+        <h3>Funktion</h3>
+        <p>Es bestehen zwei Zerfallsreihen, die mit Uran beginnen und auf Blei enden:</p>
+        <ul>
+          <li><strong>Uran-238 -> Blei-206</strong>: <em>Uran-Radium-Reihe</em> mit einer Halbwertszeit von etwa 4,5 Milliarden Jahren</li>
+          <li><strong>Uran-235 -> Blei-207</strong>: <em>Uran-Actinium-Reihe</em> mit einer Halbwertszeit von etwa 704 Millionen Jahren</li>
+        </ul>
+        <p>Der Bleianteil ist gleich dem Urangehalt mal (1 minus der Lichtgeschwindigkeit hoch der negativen Zerfallsreihe hoch der verstrichenen Zeit). Die Formel lautet:</p>
+        <p class="formula"><code>Pb = U * (1 - e<sup>-λt</sup>)</code></p>
+        <p>Bei dieser Formel gilt:</p>
+        <ul>
+          <li>Pb: Die Menge an Blei zu einem bestimmten Zeitpunkt</li>
+          <li>U: Die Anfangsmenge an Uran</li>
+          <li>λ: Die Zerfallsrate (Konstante) des Isotops</li>
+          <li>t: Die verstrichene Zeit seit dem Beginn des Zerfalls</li>
+          <li>e: Die Eulersche Zahl (ca. 2,71828)</li>
+        </ul>
+        <p>Diese Formel ist jedoch nicht direkt auf die Bestimmung des Bleigehalts in Gesteinsproben anwendbar, da diese Formel annimmt, dass anfangs kein Blei vorhanden ist. In Gesteinen ist jedoch immer eine gewisse Menge an Blei aus dem Zerfall von Uran und anderen radioaktiven Elementen vorhanden.</p>
+        <hr>
+        <p>Da wir hier ausschliesslich Uran verwenden und somit keine Bleiwerte vorliegen, wird stattdessen eine andere Formel verwendet:</p>
+        <p class="formula"><code>Halbwertszeit * (log(Uran-Anteil) / log(2)) = Verstrichene Zeit</code></p>
+        <p>Bei <code>log(Uran-Anteil) / log(2)</code> wird ermittelt, wie oft die Halbwertszeit vergangen ist, mithilfe der mathematischen Funktion <code>log()</code>. Diese Funktion berechnet den Logarithmus der gegebenen Zahl, der die Zahl ergibt, mit der die eulersche Zahl <code>e</code> multipliziert werden muss, um die eingegebene Zahl zu erreichen. Dieses Ergebnis wird mit der Halbwertszeit multipliziert, um die verstrichene Zeitspanne zu bestimmen.</p>
+        <p>Diese zweite Formel, <code>Halbwertszeit * (log(Uran-Anteil) / log(2)) = Verstrichene Zeit</code>, ist eine vereinfachte Näherung zur Bestimmung des Alters von Gesteinen anhand der Uran-Blei-Methode. Diese Formel basiert auf der folgenden Beziehung:</p>
+        <ul>
+          <li>n: Die Anzahl der Halbwertszeiten, die seit der Bildung des Gesteins vergangen sind</li>
+          <li>f: Der Anteil des verbliebenen Urans (Uran-Anteil)</li>
+        </ul>
+        
+        <hr>
+        <p>Es ist jedoch wichtig zu beachten, dass diese Methode einige Einschränkungen hat:</p>
+        <ul>
+          <li>Sie setzt voraus, dass das Uran-Isotopenverhältnis im Gestein im Laufe der Zeit konstant geblieben ist.</li>
+          <li>Sie berücksichtigt keine anderen Prozesse, die den Bleigehalt im Gestein beeinflussen können, wie z. B. die Migration von Blei.</li>
+          <li>Die Genauigkeit der Methode hängt von der Präzision der Uran- und Bleimessungen ab.</li>
+        </ul>
+        <p>Zusammenfassend lässt sich sagen:</p>
+        <ul>
+          <li>Die beiden dargestellten Formeln beschreiben grundlegende Aspekte des radioaktiven Zerfalls und der Uran-Blei-Datierung.</li>
+          <li>Für eine genaue Altersbestimmung von Gesteinen ist eine detaillierte Analyse unter Berücksichtigung der geologischen Gegebenheiten und der Verwendung fortgeschrittenerer Methoden notwendig.</li>
+        </ul>
+      </section>
     </section>
   </main>
   <footer>
