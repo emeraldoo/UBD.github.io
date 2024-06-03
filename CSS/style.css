@@ -278,11 +278,12 @@ footer {
 
 .translate-container {
   position: absolute;
-  top: 10px;
+  top: 50%;
   left: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
+  transform: translateY(-50%);
 }
 
 .translate-icon {
