@@ -115,3 +115,26 @@ window.onscroll = function () {
     scrollToTopBtn.style.display = "none";
   }
 };
+
+function toggleTranslate() {
+  var translateElement = document.getElementById("google_translate_element");
+  if (translateElement.style.display === "none" || translateElement.style.display === "") {
+    translateElement.style.display = "block";
+  } else {
+    translateElement.style.display = "none";
+    deleteGoogleTranslateCookie();
+    window.location.reload(); // Reload page to revert to the original language
+  }
+}
+
+function deleteGoogleTranslateCookie() {
+  var cookies = document.cookie.split(";");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i];
+    var eqPos = cookie.indexOf("=");
+    var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+    if (name.trim().startsWith("googtrans")) {
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+    }
+  }
+}
