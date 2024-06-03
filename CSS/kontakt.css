@@ -85,10 +85,11 @@ main {
 }
 
 .contact-container {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin: 1-2mm auto; /* Set margin to 1-2mm */
+  padding: 0; /* Remove any additional padding */
 }
 
 .contact-left {
@@ -380,4 +381,19 @@ p span {
     font-size: 16px;
     width: auto;
   }
+}
+.translate-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.translate-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1000;
 }
