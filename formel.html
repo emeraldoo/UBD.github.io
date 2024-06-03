@@ -9,7 +9,11 @@
 </head>
 <body>
   <header>
-    <h1>Formel</h1>
+    <div class="translate-container">
+      <img src="assets/sprachen.png" alt="Translate" class="translate-icon" onclick="toggleTranslate()" />
+      <div id="google_translate_element" style="display: none;"></div>
+    </div>
+    <h1 id="websiteTitle" onclick="scrollToTop()">Formel</h1>
     <nav>
       <ul>
         <li><a href="index.html">Datierungsrechner</a></li>
@@ -82,5 +86,11 @@
   </div>
   <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
   <script src="JS/script.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'de'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
