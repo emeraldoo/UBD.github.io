@@ -271,8 +271,23 @@ footer {
   border-radius: 5px;
   display: inline-block;
   margin: 10px 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.2em;
   color: #3b6e30;
 }
 
+.translate-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.translate-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1000;
+}
