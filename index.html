@@ -6,6 +6,20 @@
   <title>Uran-Blei-Datierung</title>
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="icon" href="assets/tab-bild.png" />
+  <style>
+    h1#websiteTitle {
+      color: #34D399;
+    }
+    nav ul li.active a {
+      color: #34D399;
+      font-weight: bold;
+    }
+    section {
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,7 +27,7 @@
       <img src="assets/sprachen.png" alt="Translate" class="translate-icon" onclick="toggleTranslate()" />
       <div id="google_translate_element" style="display: none;"></div>
     </div>
-    <h1 id="websiteTitle" onclick="scrollToTop()">Uran-Blei-Datierung</h1>
+    <h1 class="green-text" id="websiteTitle" onclick="scrollToTop()">Uran-Blei-Datierung</h1>
     <nav>
       <ul>
         <li class="dropdown">
@@ -26,7 +40,7 @@
           </div>
         </li>
         <li><a href="formel.html">Formel</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="impressum.html" class="active">Impressum</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
@@ -35,7 +49,7 @@
     </div>
   </header>
   <main>
-    <form>
+    <form class="btn">
       <h1>UBD</h1>
       <section id="Single_Elements">
         <section id="Uran238_only">
