@@ -6,6 +6,20 @@
   <title>Impressum</title>
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="icon" href="assets/tab-bild.png" />
+  <style>
+    h1#websiteTitle {
+      color: #34D399;
+    }
+    nav ul li.active a {
+      color: #34D399;
+      font-weight: bold;
+    }
+    section {
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,7 +32,7 @@
       <ul>
         <li><a href="index.html">Datierungsrechner</a></li>
         <li><a href="formel.html">Formel</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="impressum.html" class="active">Impressum</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
@@ -52,6 +66,18 @@
         Telefon: +41 77 497 98 99 <br />
         E-Mail: uranbleidatierung@gmail.com<br />
       </p>
+      <h3>Haftungsausschluss:</h3>
+      <p>
+        Die Inhalte unserer Seiten wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit,
+        Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+      </p>
+      <h3>Haftung für Links:</h3>
+      <p>
+        Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
+        Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+        Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
+        Seiten verantwortlich.
+      </p>
     </section>
   </main>
   <footer>
@@ -60,6 +86,7 @@
   <div id="qrOverlay" class="qr-overlay" onclick="toggleQRCode()">
     <img src="assets/qr-code.png" alt="QR Code" class="qr-overlay-image" />
   </div>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">⬆</button>
   <script src="JS/script.js"></script>
   <script type="text/javascript">
     function googleTranslateElementInit() {
