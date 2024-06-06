@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li.active a {  /* Aktuellen Menüpunkts hervorheben */
+nav ul li.active a {  
   background-color: #34d399;
   text-decoration: none;
   transform: translateY(-2px);
@@ -112,7 +112,7 @@ form {
   border-radius: 12px;
   border-width: 2px;
   border-style: solid;
-  border-color: rgb(5, 82, 26);
+  border-color: #1f2937;
 }
 
 .green-text {
@@ -132,9 +132,7 @@ section {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-width: 2px;  /* Rand hinzugefügt */
-  border-style: solid;  /* Rand hinzugefügt */
-  border-color: rgb(5, 82, 26);  /* Rand hinzugefügt */
+  border-style: transparent;   
 }
 
 input[type="number"],
