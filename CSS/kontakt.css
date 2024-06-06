@@ -1,3 +1,4 @@
+/* kontakt.css */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -27,6 +28,7 @@ footer {
   padding: 20px;
   text-align: center;
   margin-top: 20px;
+  position: relative;
 }
 
 nav ul {
@@ -399,4 +401,36 @@ p span {
   height: 30px;
   cursor: pointer;
   z-index: 1000;
+}
+
+@media only screen and (max-width: 600px) {
+  .translate-container {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .translate-container .translate-icon {
+    display: inline-block;
+  }
+
+  .translate-container .dropdown-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .translate-container .dropdown-content a {
+    padding: 10px;
+  }
+
+  footer .translate-container {
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+  }
 }
