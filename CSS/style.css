@@ -1,4 +1,4 @@
-/* style.css */
+/* Style für alles im Body Bereich */
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -7,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Header-Style */
 header {
   background-color: #1f2937;
   color: #ffffff;
@@ -17,12 +18,13 @@ header {
 }
 
 header h1 {
-  color: #34D399; 
+  color: #34D399;
   font-size: 2.5em;
   margin: 0;
   cursor: pointer;
 }
 
+/* Navigationseinstellungen */
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -46,12 +48,13 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li.active a {  
+nav ul li.active a {
   background-color: #34d399;
   text-decoration: none;
   transform: translateY(-2px);
 }
 
+/* QR-Code Container */
 .qr-code-container {
   position: absolute;
   top: 50%;
@@ -70,6 +73,7 @@ nav ul li.active a {
   transform: scale(1.1);
 }
 
+/* Dropdown-Inhalte */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -98,12 +102,14 @@ nav ul li.active a {
   display: block;
 }
 
+/* Hauptinhalt-Style */
 main {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Formular-Style */
 form {
   margin: 0 auto;
   max-width: 800px;
@@ -120,6 +126,7 @@ form {
   color: #34d399;
 }
 
+/* Überschriften und Abschnitte */
 h1,
 h2 {
   color: #1f2937;
@@ -133,9 +140,10 @@ section {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-style: transparent;   
+  border-style: transparent;
 }
 
+/* Eingabefelder und Buttons */
 input[type="number"],
 input[type="text"],
 textarea {
@@ -168,6 +176,7 @@ p span {
   font-weight: bold;
 }
 
+/* Footer-Style */
 footer {
   background-color: #1f2937;
   color: #fff;
@@ -177,6 +186,7 @@ footer {
   position: relative;
 }
 
+/* QR-Overlay-Style */
 .qr-overlay {
   display: none;
   position: fixed;
@@ -199,6 +209,7 @@ footer {
   display: flex;
 }
 
+/* Scroll-to-Top Button */
 #scrollToTopBtn {
   display: none;
   position: fixed;
@@ -221,6 +232,7 @@ footer {
   transform: translateY(-2px);
 }
 
+/* Media-Query für kleine Bildschirme */
 @media only screen and (max-width: 600px) {
   header {
     font-size: 18px;
@@ -285,6 +297,7 @@ footer {
   }
 }
 
+/* Formeltext-Stile */
 .formel-text h3 {
   color: #1f2937;
   font-size: 1.5em;
@@ -315,6 +328,7 @@ footer {
   color: #1f2937;
 }
 
+/* Container für Übersetzungsoptionen */
 .translate-container {
   position: absolute;
   top: 50%;
@@ -362,21 +376,4 @@ footer {
     margin-top: 10px;
     text-align: center;
   }
-}
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #000;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
