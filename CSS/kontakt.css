@@ -224,13 +224,13 @@ button:hover {
   display: flex;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .contact-inputs {
     width: 80vw;
   }
 
   .contact-right {
-    display: none;
+    display: none; /* Hide the contact-right section on mobile devices */
   }
 
   .qr-code-container {
@@ -252,6 +252,7 @@ button:hover {
 
   .contact-container {
     flex-direction: column;
+    align-items: center; /* Center the box */
     height: auto;
   }
 
@@ -283,7 +284,7 @@ section {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: 2px solid #1f2937; /* Hinzugefügt: Rand um die graue Box */
+  border: 2px solid #1f2937; /* Added: Border around the grey box */
 }
 
 form {
@@ -293,6 +294,8 @@ form {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  margin-left: 3px; /* Added: Margin to the left */
+  margin-right: 3px; /* Added: Margin to the right */
 }
 
 p span {
@@ -319,7 +322,7 @@ p span {
   }
 
   .contact-right {
-    display: none;
+    display: none; /* Hide the contact-right section on mobile devices */
   }
 
   .qr-code-container {
@@ -341,6 +344,7 @@ p span {
 
   .contact-container {
     flex-direction: column;
+    align-items: center; /* Center the box */
     height: auto;
   }
 }
@@ -348,11 +352,12 @@ p span {
 @media (orientation: landscape) and (max-width: 800px) {
   .contact-container {
     flex-direction: column;
+    align-items: center; /* Center the box */
     height: auto;
   }
 
   .contact-right {
-    display: none;
+    display: none; /* Hide the contact-right section on mobile devices */
   }
 }
 
